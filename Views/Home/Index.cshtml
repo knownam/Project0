@@ -1,0 +1,31 @@
+﻿@model string;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Welcome to pubs. This is a site where you can browse through fixtures of the champions league</p>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark">Leagues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark">Teams</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <p>@Model</p>
+</div>
+
+
